@@ -6,6 +6,6 @@ class Restaurant < ApplicationRecord
   validates :name, presence: true
   validates :address, presence: true
   validates :category, presence: true
-  validates :cuisines, inclusion: { in: cuisines }
+  validates :category, inclusion: { in: cuisines }
 
 end
